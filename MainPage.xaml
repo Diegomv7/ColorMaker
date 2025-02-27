@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ColorMaker.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <Color x:Key="Primary">#4392F1</Color>
+        <Color x:Key="Secondary">#0D3B66</Color>
+        <Color x:Key="Teritary">#FFFFFF</Color>
+    </ContentPage.Resources>
+
+    <Grid x:Name="Container" BackgroundColor="{StaticResource Teritary}">
+        <Frame Margin="10,0,10,0" BorderColor="Transparent" VerticalOptions="Center" BackgroundColor="{StaticResource Teritary}" CornerRadius="10">
+            <VerticalStackLayout Spacing="25" Padding="10">
+                <Label 
+                    Text="Color Maker"
+                    FontAttributes="Bold"
+                    FontSize="42"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"/>
+
+                <BoxView 
+                    x:Name="ColorBox" 
+                    HeightRequest="150" 
+                    CornerRadius="15"
+                    BackgroundColor="Black"/>
+    
+                <!-- Slider rojo -->
+                <Label
+                    Text="Valor Rojo"
+                    FontSize="Small"
+                    TextColor="Black"/>
+                <Slider 
+                    x:Name="RedSlider"  
+                    Value="0"
+                    ValueChanged="Slider_ValueChanged"
+                    ThumbColor="{StaticResource Primary}"
+                    MaximumTrackColor="{StaticResource Secondary}"
+                    MinimumTrackColor="{StaticResource Secondary}"/>
+
+                <!-- Slider Verde -->
+                <Label
+                    Text="Valor Verde"
+                    FontSize="Small"
+                    TextColor="Black"/>
+                <Slider 
+                    x:Name="GreenSlider"
+                    Value="0"
+                    ValueChanged="Slider_ValueChanged"
+                    ThumbColor="{StaticResource Primary}"
+                    MaximumTrackColor="{StaticResource Secondary}"
+                    MinimumTrackColor="{StaticResource Secondary}"/>
+
+                <!-- Slider Azul -->
+                <Label
+                    Text="Valor Azul"
+                    FontSize="Small"
+                    TextColor="Black"/>
+                <Slider 
+                    x:Name="BlueSlider" 
+                    Value="0"
+                    ValueChanged="Slider_ValueChanged"
+                    ThumbColor="{StaticResource Primary}"
+                    MaximumTrackColor="{StaticResource Secondary}"
+                    MinimumTrackColor="{StaticResource Secondary}"/>
+
+                <!-- Label  del valor hexadecimal -->
+                <Button
+                    x:Name="lblHex"
+                    TextColor="Black"
+                    Text=""
+                    BorderColor="Black"
+                    Clicked="btnCopyHex_Clicked"
+                    BackgroundColor="Transparent"
+                    FontSize="Small"/>
+
+                <!-- Botón generar random -->
+                <Button
+                    Text="Crear Color Random"
+                    Clicked="btnRandomColor_Clicked"
+                    BackgroundColor="{StaticResource Secondary}"
+                    TextColor="{StaticResource Teritary}"
+                    CornerRadius="10"
+                    HeightRequest="50"
+                    Margin="0,10,0,0"/>            
+            </VerticalStackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
