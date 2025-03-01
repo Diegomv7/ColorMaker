@@ -469,3 +469,10 @@ C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.
 C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt
 C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\ColorMaker.sourcelink.json
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\barajar.scale-100.png
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\copiar.scale-100.png
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\barajar.scale-100.png
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\copiar.scale-100.png
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Valorant.ttf
+C:\Escuela\6 Semestre\MAUI IOS\ColorMaker\ColorMaker\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\f\Valorant.ttf

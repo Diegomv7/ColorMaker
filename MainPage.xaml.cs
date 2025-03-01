@@ -13,13 +13,25 @@ public partial class MainPage : ContentPage
 	}
 
 	private void SetColor(Color color)
-	{
-		Debug.WriteLine(color.ToString());
-		Container.BackgroundColor = color;
-		ColorBox.BackgroundColor = color;
-		hexValue = color.ToHex();
-		lblHex.Text = hexValue;
-	}
+{
+    Debug.WriteLine(color.ToString());
+
+    double luminance = (0.299 * color.Red + 0.587 * color.Green + 0.114 * color.Blue);
+
+    if (luminance < 0.5)
+    {
+        lblHex.TextColor = Colors.White;
+    }
+    else
+    {
+        lblHex.TextColor = Colors.Black;
+    }
+
+    Container.BackgroundColor = color;
+    ColorBox.BackgroundColor = color;
+    hexValue = color.ToHex();
+    lblHex.Text = hexValue;
+}
 
 	private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
 	{
